@@ -40,7 +40,7 @@ public class TestView extends VerticalLayout {
 		HorizontalLayout usage2Layout = new HorizontalLayout();
 		usage2Layout.setAlignItems(Alignment.CENTER);
 		usage2Layout.add(new Label("or inplace i.e. for button's icon:"));
-		Pre refreshButtonLabel = new Pre("Button refreshButton = new Button(MaterialIcons.REFRESH.create();");
+		Pre refreshButtonLabel = new Pre("Button refreshButton = new Button(MaterialIcons.REFRESH.create());");
 		usage2Layout.add(refreshButtonLabel);
 		usage2Layout.add(new Button("Refresh", MaterialIcons.REFRESH.create()));
 		add(usage2Layout);
