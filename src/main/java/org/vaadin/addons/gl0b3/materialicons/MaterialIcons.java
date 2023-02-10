@@ -22,18 +22,19 @@ package org.vaadin.addons.gl0b3.materialicons;
 
 import java.util.Locale;
 
-import com.vaadin.flow.component.ClickNotifier;
 import com.vaadin.flow.component.dependency.JsModule;
 import com.vaadin.flow.component.dependency.NpmPackage;
-import com.vaadin.flow.component.icon.IronIcon;
+import com.vaadin.flow.component.icon.Icon;
+import com.vaadin.flow.component.icon.IconFactory;
 
 /**
- * Material Icons for Vaadin Flow 14+. The MaterialIcons enum is the iconset (1800+ icons), the inner MaterialIcons.MaterialIcon extends the IronIcon
- * and contains a specific instance (ie. refresh MaterialIcon).
+ * Material Icons for Vaadin Flow 23. The MaterialIcons enum is the iconset (1800+ icons) and extends the VaadinIcon.
  *
  * @author Károly Kótay-Szabó (aka gl0b3)
  */
-public enum MaterialIcons {
+@JsModule("@gl0b3/materialicons/materialicons.js")
+@NpmPackage(value = "@gl0b3/materialicons", version = "2.0.1")
+public enum MaterialIcons implements IconFactory {
 
 	_10K,
 	_10MP,
@@ -1856,26 +1857,11 @@ public enum MaterialIcons {
 	 */
 	public static final String ICONSET = "materialicons";
 
-	/**
-	 * Create a new {@link Icon} instance with the icon name.
-	 *
-	 * @return a new instance of {@link Icon} component
-	 */
-	public Icon create() {
-		return new Icon(this.name().toLowerCase(Locale.ENGLISH).replaceAll("^_", ""));
+	MaterialIcons() {
 	}
 
-	/**
-	 * Server side component for {@code MaterialIcon}
-	 */
-	@JsModule("@gl0b3/materialicons/materialicons.js")
-	@NpmPackage(value = "@gl0b3/materialicons", version = "1.0.0")
-	@SuppressWarnings("serial")
-	public static final class Icon extends IronIcon implements ClickNotifier<IronIcon> {
-
-		Icon(String icon) {
-			super(ICONSET, icon);
-		}
+	public Icon create() {
+		return new Icon("materialicons", this.name().toLowerCase(Locale.ENGLISH).replaceAll("^_", ""));
 	}
 
 }

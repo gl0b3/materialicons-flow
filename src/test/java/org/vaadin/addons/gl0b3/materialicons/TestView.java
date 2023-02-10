@@ -25,7 +25,7 @@ public class TestView extends VerticalLayout {
 	public TestView() {
 		setSizeFull();
 
-		add(new H2("Material Icons for Vaadin Flow v14+"));
+		add(new H2("Material Icons for Vaadin Flow v23"));
 
 		HorizontalLayout usage1Layout = new HorizontalLayout();
 		usage1Layout.setAlignItems(Alignment.CENTER);
