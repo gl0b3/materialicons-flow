@@ -1,9 +1,9 @@
 # materialicons-flow
-Material Icons for Vaadin Flow 14+.
+Material Icons for Vaadin Flow 23.
 
 Source on GitHub: [materialicons-flow](https://github.com/gl0b3/materialicons-flow)
 
-It contains 1800+ icons, based on  [Iron Icon Vaadin addon](https://vaadin.com/directory/component/iron-icons/links).
+It contains 1800+ icons, based on  [Vaadin Icon](https://vaadin.com/docs/latest/components/icons).
 
 It integrates the [materialicons](https://github.com/gl0b3/materialicons) web component (Javascript / Polymer) and allows us to use it in Vaadin Flow (Java).
 
@@ -14,7 +14,7 @@ Add the `materialicons-flow` dependency to your `pom.xml`:
 <dependency>
    <groupId>org.vaadin.addons.gl0b3</groupId>
    <artifactId>materialicons-flow</artifactId>
-   <version>1.0.0</version>
+   <version>2.0.0</version>
 </dependency>
 ```
 
