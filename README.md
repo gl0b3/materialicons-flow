@@ -42,7 +42,7 @@ Button refreshButton = new Button(MaterialIcons.REFRESH.create());
 * 2.x.x. - the version for Vaadin 23
 
 ## Branch information
-* `main` the latest version for Vaadin 14+
+* `main` the latest version for Vaadin 23
 * `1.0.0` the version for Vaadin 14+ (LTS)
 * `2.0.0` the version for Vaadin 23
 
