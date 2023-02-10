@@ -5,8 +5,10 @@
     <groupId>org.vaadin.addons.gl0b3</groupId>
     <artifactId>materialicons-flow</artifactId>
     <version>1.0.0</version>
-    <name>Material Icons</name>
-    <description>Material Icons for Vaadin 14+</description>
+
+    <name>Material Icons for Vaadin 14+</name>
+    <description>Material Icons (1800+) for Vaadin 14+</description>
+    <url>https://github.com/gl0b3/materialicons-flow</url>
     
     <properties>
         <vaadin.version>14.7.3</vaadin.version>
@@ -27,8 +29,8 @@
     </properties>
     
     <organization>
-       <name>Károly Kótay-Szabó (aka gl0b3)</name>
-     </organization>
+       <name>Karoly Kotay-Szabo (aka gl0b3)</name>
+    </organization>
      <inceptionYear>2021</inceptionYear>
     <licenses>
         <license>
@@ -51,11 +53,55 @@
     </dependencyManagement>
 
     <repositories>
+        <!-- The order of definitions matters. Explicitly defining central here to make sure it has the highest priority. -->
+        <repository>
+            <id>central</id>
+            <url>https://repo.maven.apache.org/maven2</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>vaadin-prereleases</id>
+            <url>https://maven.vaadin.com/vaadin-prereleases/</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <!-- Repository used by many Vaadin add-ons -->
         <repository>
             <id>Vaadin Directory</id>
             <url>https://maven.vaadin.com/vaadin-addons</url>
         </repository>		
     </repositories>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>central</id>
+            <url>https://repo.maven.apache.org/maven2</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </pluginRepository>
+        <pluginRepository>
+            <id>vaadin-prereleases</id>
+            <url>https://maven.vaadin.com/vaadin-prereleases/</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </pluginRepository>
+    </pluginRepositories>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+        <repository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+    </distributionManagement>
 
     <dependencies>
         <dependency>
