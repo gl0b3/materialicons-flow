@@ -46,7 +46,7 @@ label {
     word-break: break-word;
 }
 
-.container:hover > iron-icon {
+.container:hover > vaadin-icon {
     fill: #3382BF;
 }
 
@@ -59,7 +59,7 @@ label {
     color: #3382BF;
 }
 
-iron-icon {
+vaadin-icon {
     transition: all 0.2s;
     -webkit-transition: all 0.2s;
 }

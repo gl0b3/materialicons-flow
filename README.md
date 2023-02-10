@@ -28,9 +28,9 @@ Add the `vaadin-addons` repository to your `pom.xml` so Maven will be able to do
 
 ## Basic Usage
 
-Create a `refresh` MaterialIcon (it extends the IronIcon)
+Create a `refresh` MaterialIcon (it extends the VaadinIcon)
 ```java
-MaterialIcon refreshIcon = MaterialIcons.REFRESH.create();
+Icon refreshIcon = MaterialIcons.REFRESH.create();
 ```
 or inplace i.e. for button's icon:
 ```java
@@ -39,10 +39,12 @@ Button refreshButton = new Button(MaterialIcons.REFRESH.create());
 
 ## Version information
 * 1.x.x. - the version for Vaadin 14+
+* 2.x.x. - the version for Vaadin 23
 
 ## Branch information
 * `main` the latest version for Vaadin 14+
 * `1.0.0` the version for Vaadin 14+ (LTS)
+* `2.0.0` the version for Vaadin 23
 
 ## Running demos locally
 
