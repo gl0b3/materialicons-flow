@@ -4,7 +4,7 @@
 
     <groupId>org.vaadin.addons.gl0b3</groupId>
     <artifactId>materialicons-flow</artifactId>
-    <version>3.0.1-SNAPSHOT</version>
+    <version>3.0.0</version>
 
     <name>Material Icons for Vaadin 24</name>
     <description>Material Icons (1800+) for Vaadin 24</description>
@@ -19,13 +19,13 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <project.build.generatedSources>${project.basedir}/src/main/generated</project.build.generatedSources>
-        <materialicon.version>3.0.1</materialicon.version>
+        <materialicon.version>3.0.2</materialicon.version>
 		<project.build.generatedResources>${project.basedir}/src/main/javascript</project.build.generatedResources>
         <codegen.sprites>${project.build.directory}/sprites</codegen.sprites>
         <codegen.skipDownload>false</codegen.skipDownload>
         <codegen.embedded>false</codegen.embedded>
         <npm.package>@gl0b3/materialicons</npm.package>
-        <npm.version>3.0.1</npm.version>
+        <npm.version>3.0.2</npm.version>
     </properties>
     
     <organization>

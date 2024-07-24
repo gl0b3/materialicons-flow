@@ -3,7 +3,8 @@
 .settings
 .project
 .classpath
-.npmrc
+.npmrc*
+frontend/gnerated/
 
 *.iml
 .DS_Store
