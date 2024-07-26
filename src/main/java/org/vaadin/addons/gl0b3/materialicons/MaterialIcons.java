@@ -28,12 +28,12 @@ import com.vaadin.flow.component.icon.Icon;
 import com.vaadin.flow.component.icon.IconFactory;
 
 /**
- * Material Icons for Vaadin Flow 23. The MaterialIcons enum is the iconset (1800+ icons) and extends the VaadinIcon.
+ * Material Icons for Vaadin Flow 24. The MaterialIcons enum is the iconset (1800+ icons) and extends the VaadinIcon.
  *
  * @author Károly Kótay-Szabó (aka gl0b3)
  */
 @JsModule("@gl0b3/materialicons/materialicons.js")
-@NpmPackage(value = "@gl0b3/materialicons", version = "2.0.1")
+@NpmPackage(value = "@gl0b3/materialicons", version = "3.0.2")
 public enum MaterialIcons implements IconFactory {
 
 	_10K,
