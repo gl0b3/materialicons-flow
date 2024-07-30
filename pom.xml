@@ -4,7 +4,7 @@
 
     <groupId>org.vaadin.addons.gl0b3</groupId>
     <artifactId>materialicons-flow</artifactId>
-    <version>3.0.1-SNAPSHOT</version>
+    <version>3.0.1</version>
 
     <name>Material Icons for Vaadin 14+</name>
     <description>Material Icons (1800+) for Vaadin 14+</description>
