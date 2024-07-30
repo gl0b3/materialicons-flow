@@ -4,34 +4,35 @@
 
     <groupId>org.vaadin.addons.gl0b3</groupId>
     <artifactId>materialicons-flow</artifactId>
-    <version>3.0.0</version>
+    <version>3.0.1-SNAPSHOT</version>
 
-    <name>Material Icons for Vaadin 24</name>
-    <description>Material Icons (1800+) for Vaadin 24</description>
+    <name>Material Icons for Vaadin 14+</name>
+    <description>Material Icons (1800+) for Vaadin 14+</description>
     <url>https://github.com/gl0b3/materialicons-flow</url>
-    
+
     <properties>
         <vaadin.version>24.4.1</vaadin.version>
         <java.version>17</java.version>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
-        <jetty.version>12.0.0</jetty.version>
+        <jetty.version>11.0.13</jetty.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <project.build.generatedSources>${project.basedir}/src/main/generated</project.build.generatedSources>
         <materialicon.version>3.0.2</materialicon.version>
-		<project.build.generatedResources>${project.basedir}/src/main/javascript</project.build.generatedResources>
+        <project.build.generatedResources>${project.basedir}/src/main/javascript</project.build.generatedResources>
         <codegen.sprites>${project.build.directory}/sprites</codegen.sprites>
         <codegen.skipDownload>false</codegen.skipDownload>
         <codegen.embedded>false</codegen.embedded>
         <npm.package>@gl0b3/materialicons</npm.package>
         <npm.version>3.0.2</npm.version>
     </properties>
-    
+
     <organization>
-       <name>Karoly Kotay-Szabo (aka gl0b3)</name>
+        <name>Karoly Kotay-Szabo (aka gl0b3)</name>
+        <url>https://github.com/gl0b3/materialicons-flow</url>
     </organization>
-     <inceptionYear>2021</inceptionYear>
+    <inceptionYear>2021</inceptionYear>
     <licenses>
         <license>
             <name>Apache 2</name>
@@ -39,6 +40,13 @@
             <distribution>repo</distribution>
         </license>
     </licenses>
+
+    <scm>
+        <url>https://github.com/gl0b3/materialicons-flow</url>
+        <connection>scm:git:git://github.com/gl0b3/materialicons-flow.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com:/gl0b3/materialicons-flow.git</developerConnection>
+        <tag>master</tag>
+    </scm>
 
     <dependencyManagement>
         <dependencies>
@@ -72,7 +80,7 @@
         <repository>
             <id>Vaadin Directory</id>
             <url>https://maven.vaadin.com/vaadin-addons</url>
-        </repository>		
+        </repository>
     </repositories>
 
     <pluginRepositories>
@@ -137,77 +145,78 @@
                 </exclusion>
             </exclusions>
         </dependency>
-		
-		<dependency>
-		    <groupId>junit</groupId>
-		    <artifactId>junit</artifactId>
-		    <version>4.13.1</version>
-		    <scope>test</scope>
-		</dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13.1</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <build>
-		<pluginManagement>
-			<plugins>
-				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-release-plugin</artifactId>
-					<version>2.5.3</version>
-				</plugin>
-				<plugin>
+        <defaultGoal>jetty:run</defaultGoal>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-release-plugin</artifactId>
+                    <version>2.5.3</version>
+                </plugin>
+                <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-deploy-plugin</artifactId>
                     <version>2.8.2</version>
                 </plugin>
-				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-surefire-plugin</artifactId>
-					<version>2.22.1</version>
-					<configuration>
-						<useSystemClassLoader>false</useSystemClassLoader>
-					</configuration>
-				</plugin>
-			</plugins>
-		</pluginManagement>
-		
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                    <version>2.22.1</version>
+                    <configuration>
+                        <useSystemClassLoader>false</useSystemClassLoader>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+
         <plugins>
-				
-			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>license-maven-plugin</artifactId>
-				<version>1.20</version>
-				<configuration>
-				  <licenseName>apache_v2</licenseName>
-				  <addJavaLicenseAfterPackage>false</addJavaLicenseAfterPackage>
-				  <excludes>
-                      <exclude>**/main/javascript/materialicons/*</exclude>
-				  </excludes>
-				  <extraExtensions>
-					<xslt>xml</xslt>
-				  </extraExtensions>
-				</configuration>
-			</plugin>
-	
+
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>license-maven-plugin</artifactId>
+                <version>1.20</version>
+                <configuration>
+                    <licenseName>apache_v2</licenseName>
+                    <addJavaLicenseAfterPackage>false</addJavaLicenseAfterPackage>
+                    <excludes>
+                        <exclude>**/main/javascript/materialicons/*</exclude>
+                    </excludes>
+                    <extraExtensions>
+                        <xslt>xml</xslt>
+                    </extraExtensions>
+                </configuration>
+            </plugin>
+
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>build-helper-maven-plugin</artifactId>
                 <version>3.0.0</version>
                 <executions>
-				  <execution>
-					<id>add-source</id>
-					<phase>generate-sources</phase>
-					<goals>
-					  <goal>add-source</goal>
-					</goals>
-					<configuration>
-					  <sources>
-						<source>${project.build.generatedSources}</source>
-					  </sources>
-					</configuration>
-				  </execution>
-				</executions>
+                    <execution>
+                        <id>add-source</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>add-source</goal>
+                        </goals>
+                        <configuration>
+                            <sources>
+                                <source>${project.build.generatedSources}</source>
+                            </sources>
+                        </configuration>
+                    </execution>
+                </executions>
             </plugin>
-						
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
@@ -225,7 +234,6 @@
                     </archive>
                 </configuration>
             </plugin>
-
             <plugin>
                 <groupId>com.vaadin</groupId>
                 <artifactId>vaadin-maven-plugin</artifactId>
@@ -239,23 +247,8 @@
                     </execution>
                 </executions>
             </plugin>
+
             <!-- Jetty plugin for easy testing without a server -->
-            <plugin>
-                <groupId>org.eclipse.jetty.ee10</groupId>
-                <artifactId>jetty-ee10-maven-plugin</artifactId>
-                <version>${jetty.version}</version>
-                <configuration>
-                    <!-- If using IntelliJ IDEA with autocompilation, this
-                    might cause lots of unnecessary compilations in the
-                    background.-->
-                    <!--
-                    <scanIntervalSeconds>2</scanIntervalSeconds>-->
-                    <!-- Use war output directory to get the webpack files -->
-                    <webAppConfig>
-                        <allowDuplicateFragmentNames>true</allowDuplicateFragmentNames>
-                    </webAppConfig>
-                </configuration>
-            </plugin>
             <plugin>
                 <groupId>org.eclipse.jetty</groupId>
                 <artifactId>jetty-maven-plugin</artifactId>
@@ -267,13 +260,21 @@
                     <useTestScope>true</useTestScope>
                     <webAppConfig>
                         <resourceBases>
-	                        <resourceBase>src/test/resources/META-INF/resources</resourceBase>
-<!--	                        <resourceBase>src/main/resources/META-INF/resources</resourceBase>-->
-	                    </resourceBases>
+                            <resourceBase>src/test/resources/META-INF/resources</resourceBase>
+                        </resourceBases>
                     </webAppConfig>
                     <supportedPackagings>
                         <supportedPackaging>jar</supportedPackaging>
                     </supportedPackagings>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.sonatype.central</groupId>
+                <artifactId>central-publishing-maven-plugin</artifactId>
+                <version>0.5.0</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <publishingServerId>central</publishingServerId>
                 </configuration>
             </plugin>
         </plugins>
