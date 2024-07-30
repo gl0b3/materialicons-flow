@@ -35,6 +35,9 @@ label {
     width: 10em;
     margin: 1em 0.5em;
     text-align: center;
+    border: 1px solid var(--color-blue);
+    border-radius: 3px;
+    transition: transform 0.2s;
 }
 
 .container > div {
@@ -48,11 +51,12 @@ label {
 
 .container:hover > vaadin-icon {
     fill: #3382BF;
+    transition:
 }
 
 .container:hover {
-    border-radius: 3px;
     background-color: var(--color-dirty-white);
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 .container:hover > div {

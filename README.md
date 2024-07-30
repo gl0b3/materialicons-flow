@@ -5,7 +5,7 @@ Source on GitHub: [materialicons-flow](https://github.com/gl0b3/materialicons-fl
 
 It contains 1800+ icons, based on  [Vaadin Icon](https://vaadin.com/docs/latest/components/icons).
 
-It integrates the [materialicons](https://github.com/gl0b3/materialicons) web component (Javascript / Lit) and allows us to use it in Vaadin Flow (Java).
+It integrates the [materialicons](https://github.com/gl0b3/materialicons) web component (Javascript / Lit - version 3.0.2) and allows us to use it in Vaadin Flow (Java).
 
 ## Install
 
@@ -14,7 +14,7 @@ Add the `materialicons-flow` dependency to your `pom.xml`:
 <dependency>
    <groupId>org.vaadin.addons.gl0b3</groupId>
    <artifactId>materialicons-flow</artifactId>
-   <version>3.0.0</version>
+   <version>3.0.1</version>
 </dependency>
 ```
 
@@ -46,7 +46,7 @@ Button refreshButton = new Button(MaterialIcons.REFRESH.create());
 * `main` the latest version for Vaadin 24
 * `1.0.0` the version for Vaadin 14+ (LTS)
 * `2.0.0` the version for Vaadin 23
-* `3.0.0` the version for Vaadin 24
+* `3.0.0` the version for Vaadin 24.4
 
 ## Running demos locally
 
