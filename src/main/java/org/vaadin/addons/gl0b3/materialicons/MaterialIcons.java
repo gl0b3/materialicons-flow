@@ -33,7 +33,7 @@ import com.vaadin.flow.component.icon.IconFactory;
  * @author Károly Kótay-Szabó (aka gl0b3)
  */
 @JsModule("@gl0b3/materialicons/materialicons.js")
-@NpmPackage(value = "@gl0b3/materialicons", version = "2.0.1")
+@NpmPackage(value = "@gl0b3/materialicons", version = "2.0.2")
 public enum MaterialIcons implements IconFactory {
 
 	_10K,

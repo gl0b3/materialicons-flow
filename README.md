@@ -7,6 +7,20 @@ It contains 1800+ icons, based on  [Vaadin Icon](https://vaadin.com/docs/latest/
 
 It integrates the [materialicons](https://github.com/gl0b3/materialicons) web component (Javascript / Polymer) and allows us to use it in Vaadin Flow (Java).
 
+## Note
+
+If you previously used materialicons-flow version 1.0.0, please switch to 1.0.1. Version materialicons (Javascript) 1.0.0 has been removed from the NPMJS registry and replaced by 1.0.1. The code remained the same, only the version number changed due to the republishing.
+
+If you previously used materialicons-flow version 2.0.0, please switch to 2.0.1. Version materialicons (Javascript) 2.0.1 has been removed from the NPMJS registry and replaced by 2.0.2. The code remained the same, only the version number changed due to the republishing.
+
+| materialicons-flow (Java Maven artifact) | materialicons (NPM/Javascript module) | NPMJS registry Status |
+|------------------------------------------|---------------------------------------|-----------------------|
+| 1.0.0 (for Vaadin 14+)                   | 1.0.0                                 | unavailable           |
+| 1.0.1 (for Vaadin 14+)                   | 1.0.1                                 | available             |
+| 2.0.0 (for Vaadin 23)                    | 2.0.0 & 2.0.1                         | unavailable           |
+| 2.0.1 (for Vaadin 23)                    | 2.0.2                                 | available             |
+| 3.0.0 (for Vaadin 24.4+)                 | 3.0.2                                 | available             |
+
 ## Install
 
 Add the `materialicons-flow` dependency to your `pom.xml`:
@@ -14,7 +28,7 @@ Add the `materialicons-flow` dependency to your `pom.xml`:
 <dependency>
    <groupId>org.vaadin.addons.gl0b3</groupId>
    <artifactId>materialicons-flow</artifactId>
-   <version>2.0.0</version>
+   <version>2.0.1</version>
 </dependency>
 ```
 
@@ -43,8 +57,9 @@ Button refreshButton = new Button(MaterialIcons.REFRESH.create());
 
 ## Branch information
 * `main` the latest version for Vaadin 23
-* `1.0.0` the version for Vaadin 14+ (LTS)
-* `2.0.0` the version for Vaadin 23
+* `1.0.1` the version for Vaadin 14+ (LTS)
+* `2.0.2` the version for Vaadin 23
+* `3.0.0` the version for Vaadin 24.4+
 
 ## Running demos locally
 

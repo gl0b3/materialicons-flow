@@ -3,7 +3,8 @@
 .settings
 .project
 .classpath
-
+/src/main/bundles
+/src/main/frontend/generated
 *.iml
 .DS_Store
 
