@@ -7,6 +7,10 @@ It contains 1800+ icons, based on  [Iron Icon Vaadin addon](https://vaadin.com/d
 
 It integrates the [materialicons](https://github.com/gl0b3/materialicons) web component (Javascript / Polymer) and allows us to use it in Vaadin Flow (Java).
 
+## Note
+
+If you previously used version 1.0.0, please switch to 1.0.1. Version materialicons (Javascript) 1.0.0 has been removed from the NPMJS registry and replaced by 1.0.1. The code remained the same, only the version number changed due to the republishing.
+
 ## Install
 
 Add the `materialicons-flow` dependency to your `pom.xml`:
@@ -14,7 +18,7 @@ Add the `materialicons-flow` dependency to your `pom.xml`:
 <dependency>
    <groupId>org.vaadin.addons.gl0b3</groupId>
    <artifactId>materialicons-flow</artifactId>
-   <version>1.0.0</version>
+   <version>1.0.1</version>
 </dependency>
 ```
 

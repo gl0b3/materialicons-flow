@@ -2,7 +2,7 @@
   "name": "no-name",
   "license": "UNLICENSED",
   "dependencies": {
-    "@gl0b3/materialicons": "1.0.0",
+    "@gl0b3/materialicons": "1.0.1",
     "@polymer/iron-a11y-announcer": "3.0.2",
     "@polymer/iron-a11y-keys-behavior": "3.0.1",
     "@polymer/iron-fit-behavior": "3.0.2",
@@ -91,7 +91,7 @@
   },
   "vaadin": {
     "dependencies": {
-      "@gl0b3/materialicons": "1.0.0",
+      "@gl0b3/materialicons": "1.0.1",
       "@polymer/iron-a11y-announcer": "3.0.2",
       "@polymer/iron-a11y-keys-behavior": "3.0.1",
       "@polymer/iron-fit-behavior": "3.0.2",
@@ -178,6 +178,6 @@
       "webpack-dev-server": "3.11.0",
       "webpack-merge": "4.2.2"
     },
-    "hash": "260ef0aca0fb70717fe206a5254826d9848acd4a64eb9b96f88521c9a0eb5952"
+    "hash": "50ae0d427e31347c8398453fa31398d2cb8c04c6ad04375ca7b0bd46ca1dcac5"
   }
 }

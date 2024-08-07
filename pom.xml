@@ -4,7 +4,7 @@
 
     <groupId>org.vaadin.addons.gl0b3</groupId>
     <artifactId>materialicons-flow</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
 
     <name>Material Icons for Vaadin 14+</name>
     <description>Material Icons (1800+) for Vaadin 14+</description>
@@ -23,9 +23,9 @@
         <codegen.sprites>${project.build.directory}/sprites</codegen.sprites>
         <codegen.skipDownload>false</codegen.skipDownload>
         <codegen.embedded>false</codegen.embedded>
-        <materialicons.version>1.0.0</materialicons.version>
+        <materialicons.version>1.0.1</materialicons.version>
         <npm.package>@gl0b3/materialicons</npm.package>
-        <npm.version>1.0.0</npm.version>
+        <npm.version>1.0.1</npm.version>
     </properties>
     
     <organization>
@@ -346,8 +346,8 @@
                         </executions>
                         <configuration>
                             <quiet>true</quiet>
-                            <additionalparam>-Xdoclint:none</additionalparam>
-                            <javadocExecutable>${java.home}/bin/javadoc</javadocExecutable>
+<!--                            <additionalparam>-Xdoclint:none</additionalparam>-->
+<!--                            <javadocExecutable>${java.home}/bin/javadoc</javadocExecutable>-->
                         </configuration>
                     </plugin>
                     <plugin>

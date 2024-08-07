@@ -3,6 +3,7 @@
 .settings
 .project
 .classpath
+/src/main/generated/
 
 *.iml
 .DS_Store

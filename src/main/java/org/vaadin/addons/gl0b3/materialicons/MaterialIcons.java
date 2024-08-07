@@ -1869,7 +1869,7 @@ public enum MaterialIcons {
 	 * Server side component for {@code MaterialIcon}
 	 */
 	@JsModule("@gl0b3/materialicons/materialicons.js")
-	@NpmPackage(value = "@gl0b3/materialicons", version = "1.0.0")
+	@NpmPackage(value = "@gl0b3/materialicons", version = "1.0.1")
 	@SuppressWarnings("serial")
 	public static final class Icon extends IronIcon implements ClickNotifier<IronIcon> {
 
