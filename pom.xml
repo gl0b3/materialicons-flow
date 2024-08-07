@@ -6,8 +6,8 @@
     <artifactId>materialicons-flow</artifactId>
     <version>2.0.1</version>
 
-    <name>Material Icons for Vaadin 23</name>
-    <description>Material Icons (1800+) for Vaadin 23</description>
+    <name>Material Icons for Vaadin 14+</name>
+    <description>Material Icons (1800+) for Vaadin 14+</description>
     <url>https://github.com/gl0b3/materialicons-flow</url>
     
     <properties>
