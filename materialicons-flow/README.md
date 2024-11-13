@@ -1,18 +1,11 @@
 # materialicons-flow
-Material Icons for Vaadin Flow 23.
+Material Icons v2.1.0 for Vaadin Flow 23.
 
-Source on GitHub: [materialicons-flow](https://github.com/gl0b3/materialicons-flow)
+Source on GitHub: [materialicons-flow](https://github.com/gl0b3/materialicons-flow/materialicons-flow)
 
 It contains 2170 icons, based on  [Vaadin Icon](https://vaadin.com/docs/latest/components/icons).
 
 It integrates the [materialicons](https://github.com/gl0b3/materialicons) web component (Javascript / Polymer) and allows us to use it in Vaadin Flow (Java).
-
-This project contains 2 sub-projects:
-
-- materialicons-flow: the Vaadin addon
-- materialicons-flow-demo: a demo for the addon
-
-For more info about the projets see the sub-projects' README.
 
 ## Note
 
@@ -29,6 +22,35 @@ If you previously used materialicons-flow version 2.0.0, please switch to 2.0.1.
 | 2.1.0 (for Vaadin 23)                    | 2.1.0                                 | available             |
 | 3.0.0 (for Vaadin 24.4+)                 | 3.0.2                                 | available             |
 
+## Install
+
+Add the `materialicons-flow` dependency to your `pom.xml`:
+```xml
+<dependency>
+   <groupId>org.vaadin.addons.gl0b3</groupId>
+   <artifactId>materialicons-flow</artifactId>
+   <version>2.1.0</version>
+</dependency>
+```
+
+Add the `vaadin-addons` repository to your `pom.xml` so Maven will be able to download the dependency:
+```xml
+<repository>
+   <id>vaadin-addons</id>
+   <url>http://maven.vaadin.com/vaadin-addons</url>
+</repository>
+```
+
+## Basic Usage
+
+Create a `refresh` MaterialIcon (it extends the VaadinIcon)
+```java
+Icon refreshIcon = MaterialIcons.REFRESH.create();
+```
+or inplace i.e. for button's icon:
+```java
+Button refreshButton = new Button(MaterialIcons.REFRESH.create());
+```
 ## Version information
 * 1.x.x. - the version for Vaadin 14+
 * 2.x.x. - the version for Vaadin 23
