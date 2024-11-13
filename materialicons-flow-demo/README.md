@@ -1,4 +1,4 @@
-# materialicons-flow
+# materialicons-flow-demo
 Material Icons v2.1.0 demo for Vaadin Flow 23.
 
 Source on GitHub: [materialicons-flow](https://github.com/gl0b3/materialicons-flow/materialicons-flow-demo)
