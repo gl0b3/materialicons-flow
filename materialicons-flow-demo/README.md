@@ -18,8 +18,11 @@ or
 ```bash
 mvn clean install
 ```
-- run the Application.main() from your favorite IDE or from cmd from the demo source folder:
+- run the Application.main() from your favorite IDE\
+or from the demo source folder type the following:
 ```bash
-javar -jar 
+java -jar target/materialicons-flow-demo-2.1.0.jar
 ```
+
+Note: the demo project uses Java 11, so the runtime environment must be on this version (or higher). 
 

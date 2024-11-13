@@ -23,6 +23,7 @@ package org.vaadin.addons.gl0b3.materialicons;
 import java.util.Locale;
 
 import com.vaadin.flow.component.dependency.JsModule;
+import com.vaadin.flow.component.dependency.NpmPackage;
 import com.vaadin.flow.component.icon.Icon;
 import com.vaadin.flow.component.icon.IconFactory;
 
@@ -33,7 +34,7 @@ import com.vaadin.flow.component.icon.IconFactory;
  * @author Károly Kótay-Szabó (aka gl0b3)
  */
 @JsModule("@gl0b3/materialicons/materialicons.js")
-//@NpmPackage(value = "@gl0b3/materialicons", version = "2.1.0")
+@NpmPackage(value = "@gl0b3/materialicons", version = "2.1.0")
 public enum MaterialIcons implements IconFactory {
 
 	_10K,
